@@ -1,0 +1,1805 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  animation: transitionIn 0.8s;
+}
+
+.container2 {
+  animation: transitionIn 0.77s;
+  
+}
+
+.container_projects {
+  animation: transitionIn 0.77s;
+}
+
+.home_container #upper_page img, h2{
+  animation: transitionIn 0.77s;
+}
+
+.home_container #bottom_page h3, p{
+  animation: transitionIn 0.77s;
+}
+
+#information {
+  animation: transitionIn 0.77s;
+}
+
+#education {
+  animation: transitionIn 0.77s;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  color: black;
+  line-height: 1.6;
+  height: 100vh;
+  overflow: scroll;
+}
+
+
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;  
+}
+
+
+.navbar {
+  /* makes the navbar fixed at top of screen */
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  /*nav bar extends to the other side of screen */
+  width: 100%;
+  height: 60px;
+  background: rgba(0,0,0,0.7);
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+  padding: 1rem;
+
+}
+
+.navbar ul li a {
+  /*removes the underline */
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f4f4f4;
+}
+
+.navbar ul li a.active {
+  color: skyblue;
+}
+
+
+.navbar ul li a:hover {
+  color: skyblue;
+}
+
+
+
+@media (min-width: 319px) and (max-width: 361px) {
+  .navbar {
+    /* makes the navbar fixed at top of screen */
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    /*nav bar extends to the other side of screen */
+    width: 100%;
+    height: 60px;
+    background: rgba(0,0,0,0.7);
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+  
+  }
+  
+  .navbar ul li {
+    font-size: 14px;
+    margin-top: 17px;
+    margin-right: 1px;
+    padding: 0.5px;
+  
+  }
+
+  /* Home page */
+
+  #Home #upper_page {
+    padding-top: 1px;
+    padding-bottom: 100px;
+    background-color: aliceblue;
+    z-index: 1;
+    opacity: 1;
+    height: 95%;
+    box-shadow: 5px 5px 8px white;
+  }
+
+  #Home #upper_page img {
+    margin-top: 80px;
+    height: 30%;
+    width: 30%;
+    border-radius: 15px;
+    display: flex; 
+    box-shadow: 0.5px 0.5px 0.5px; 
+
+  }
+
+  #Home #upper_page h2 {
+    font-size: 25px;
+    position: absolute;
+    right: 16%;
+    margin-top: 20px;
+  }
+
+  #Home .home_container #bottom_page h3 {
+    margin-left: 25px;
+    font-size: 20px;
+  }
+
+  #Home .home_container #bottom_page p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-top: 0;
+    padding: 25px;
+  }
+
+  /* Project section */
+  .container_projects {
+    margin-top: 100px;
+  }
+
+  .each_project {
+    margin-top:100px;
+  }
+
+  .projects {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 95%;
+    background-color: aliceblue;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px;
+    border-style: outset;
+
+  }
+
+  .projects video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+    width: 250px;
+  }
+
+  .projects h3 {
+    margin: 5px;
+  }
+
+  .each_project .project_description {
+    background-color: white;
+  }
+  .projects ul {
+    font-size: 19px;
+    padding: 4px;
+    margin-top: 5px;
+  }
+
+  /* Education Section */
+   #education {
+    background-color: white;
+    margin-top: 70px;
+    width: 95%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px;
+    border-style: outset;
+  }
+
+  #education .container {
+    padding: 5px;
+    
+  }
+
+  #education #columns h3 {
+    font-size: 19px;
+  }
+
+  #education #columns p {
+    font-size: 17px;
+  }
+
+  /* Contact Information Section */
+
+  #information #container{
+    background-color: white;
+    margin-top: 70px;
+    width: 90%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px;
+    border-style: outset;
+  }
+
+  #container {
+    padding: 10px;
+  }
+  
+  #contact #information p {
+    font-size: 19px;
+  }
+  
+  #contact #information p a {
+    font-size: 19px;
+  }
+
+}
+
+@media (min-width: 374px) and (max-width: 415px) {
+  .navbar {
+    /* makes the navbar fixed at top of screen */
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    /*nav bar extends to the other side of screen */
+    width: 100%;
+    height: 60px;
+    background: rgba(0,0,0,0.7);
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+  
+  }
+  
+  .navbar ul li {
+    font-size: 17px;
+    margin-top: 17px;
+    margin-right: 2px;
+    padding: 0.5px;
+  
+  }
+
+  /* Home page */
+
+  #Home #upper_page {
+    padding-top: 1px;
+    padding-bottom: 100px;
+    background-color: aliceblue;
+    z-index: 1;
+    opacity: 1;
+    height: 95%;
+    box-shadow: 5px 5px 8px white;
+  }
+
+  #Home #upper_page img {
+    margin-top: 80px;
+    height: 40%;
+    width: 40%;
+    border-radius: 15px;
+    display: flex; 
+    box-shadow: 0.5px 0.5px 0.5px; 
+
+  }
+
+  #Home #upper_page h2 {
+    font-size: 28px;
+    position: absolute;
+    right: 15%;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  #Home .home_container #bottom_page h3 {
+    margin-left: 25px;
+
+  }
+
+  #Home .home_container #bottom_page p {
+    font-size: 20px;
+    padding: 25px;
+    margin-bottom: 5px;
+  }
+
+  /* Project section */
+  .container_projects {
+    margin-top: 100px;
+  }
+
+  .each_project {
+    margin-top:100px;
+  }
+
+  .projects {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 95%;
+    height: 90%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px;
+    border-style: outset;
+
+  }
+
+  .projects video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+    width: 250px;
+  }
+
+  .projects h3 {
+    margin: 5px;
+  }
+
+  .projects ul {
+    font-size: 19px;
+    padding: 4px;
+    margin-top: 5px;
+  }
+  
+  .projects ul li {
+    font-size: 20px;
+  }
+
+  /* Education Section */
+   #education {
+    background-color: white;
+    margin-top: 170px;
+    width: 95%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px;
+    border-style: outset ;
+  }
+
+  #education .container {
+    padding: 5px;
+  }
+
+  #education #columns h3 {
+    font-size: 19px;
+  }
+
+  #education #columns p {
+    font-size: 17px;
+  }
+
+  /* Contact Information Section */
+
+  #information #container{
+    background-color: white;
+    margin-top: 170px;
+    width: 90%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px;
+    border-style: outset;
+  }
+
+  #container {
+    padding: 10px;
+  }
+  
+  #contact #information p {
+    font-size: 19px;
+  }
+  
+  #contact #information p a {
+    font-size: 19px;
+  }
+
+  
+
+  
+}
+
+@media (min-width: 500px) and (max-width: 570px) {
+  .navbar {
+    /* makes the navbar fixed at top of screen */
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    /*nav bar extends to the other side of screen */
+    width: 100%;
+    height: 60px;
+    background: rgba(0,0,0,0.7);
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+  
+  }
+  
+  .navbar ul li {
+    font-size: 17px;
+    margin-top: 17px;
+    margin-right: 2px;
+    padding: 0.5px;
+  
+  }
+
+  /* Home page */
+
+  #Home #upper_page {
+    padding-top: 1px;
+    padding-bottom: 100px;
+    background-color: aliceblue;
+    z-index: 1;
+    opacity: 1;
+    height: 95%;
+    box-shadow: 5px 5px 8px white;
+  }
+
+  #Home #upper_page img {
+    margin-top: 80px;
+    height: 40%;
+    width: 40%;
+    border-radius: 15px;
+    display: flex; 
+    box-shadow: 0.5px 0.5px 0.5px; 
+
+  }
+
+  #Home #upper_page h2 {
+    font-size: 28px;
+    position: absolute;
+    right: 19%;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  #Home .home_container #bottom_page h3 {
+    margin-left: 25px;
+
+  }
+
+  #Home .home_container #bottom_page p {
+    font-size: 20px;
+    padding: 25px;
+    margin-bottom: 5px;
+  }
+
+  /* Project section */
+  .container_projects {
+    margin-top: 100px;
+  }
+
+  .each_project {
+    margin-top:100px;
+  }
+
+  .projects {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 95%;
+    height: 90%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px;
+    border-style: outset;
+
+  }
+
+  .projects video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+    width: 250px;
+  }
+
+  .projects h3 {
+    margin: 5px;
+  }
+
+  .projects ul {
+    font-size: 19px;
+    padding: 4px;
+    margin-top: 5px;
+  }
+  
+  .projects ul li {
+    font-size: 20px;
+  }
+
+  /* Education Section */
+   #education {
+    background-color: white;
+    margin-top: 170px;
+    width: 95%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px;
+    border-style: outset ;
+  }
+
+  #education .container {
+    padding: 5px;
+  }
+
+  #education #columns h3 {
+    font-size: 19px;
+  }
+
+  #education #columns p {
+    font-size: 17px;
+  }
+
+  /* Contact Information Section */
+
+  #information #container{
+    background-color: white;
+    margin-top: 170px;
+    width: 90%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px;
+    border-style: outset;
+  }
+
+  #container {
+    padding: 10px;
+  }
+  
+  #contact #information p {
+    font-size: 19px;
+  }
+  
+  #contact #information p a {
+    font-size: 19px;
+  }
+
+  
+
+  
+}
+
+@media (min-width: 571px) and (max-width: 768px) {
+  .navbar {
+    /* makes the navbar fixed at top of screen */
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    /*nav bar extends to the other side of screen */
+    width: 100%;
+    height: 60px;
+    background: rgba(0,0,0,0.7);
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+  
+  }
+  
+  .navbar ul li {
+    font-size: 17px;
+    margin-top: 17px;
+    margin-right: 2px;
+    padding: 0.5px;
+  
+  }
+
+  /* Home page */
+
+  #Home #upper_page {
+    padding-top: 1px;
+    padding-bottom: 100px;
+    background-color: aliceblue;
+    z-index: 1;
+    opacity: 1;
+    height: 95%;
+    box-shadow: 5px 5px 8px white;
+  }
+
+  #Home #upper_page img {
+    margin-top: 80px;
+    height: 40%;
+    width: 40%;
+    border-radius: 15px;
+    display: flex; 
+    box-shadow: 0.5px 0.5px 0.5px; 
+
+  }
+
+  #Home #upper_page h2 {
+    font-size: 28px;
+    position: absolute;
+    right: 19%;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  #Home .home_container #bottom_page h3 {
+    margin-left: 25px;
+
+  }
+
+  #Home .home_container #bottom_page p {
+    font-size: 20px;
+    padding: 25px;
+    margin-bottom: 5px;
+  }
+
+  /* Project section */
+  .container_projects {
+    margin-top: 100px;
+  }
+
+  .each_project {
+    margin-top:100px;
+  }
+
+  .projects {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 95%;
+    height: 90%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px;
+    border-style: outset;
+
+  }
+
+  .projects video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+    width: 250px;
+  }
+
+  .projects h3 {
+    margin: 5px;
+  }
+
+  .projects ul {
+    font-size: 19px;
+    padding: 4px;
+    margin-top: 5px;
+  }
+  
+  .projects ul li {
+    font-size: 20px;
+  }
+
+  /* Education Section */
+   #education {
+    background-color: white;
+    margin-top: 170px;
+    width: 95%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px;
+    border-style: outset ;
+  }
+
+  #education .container {
+    padding: 5px;
+  }
+
+  #education #columns h3 {
+    font-size: 19px;
+  }
+
+  #education #columns p {
+    font-size: 17px;
+  }
+
+  /* Contact Information Section */
+
+  #information #container{
+    background-color: white;
+    margin-top: 170px;
+    width: 90%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px;
+    border-style: outset;
+  }
+
+  #container {
+    padding: 10px;
+  }
+  
+  #contact #information p {
+    font-size: 19px;
+  }
+  
+  #contact #information p a {
+    font-size: 19px;
+  }
+
+  
+
+  
+}
+
+@media (min-width: 768px) and (max-width: 769px) {
+  .navbar {
+    /* makes the navbar fixed at top of screen */
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    /*nav bar extends to the other side of screen */
+    width: 100%;
+    height: 60px;
+    background: rgba(0,0,0,0.7);
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+  
+  }
+  
+  .navbar ul li {
+    font-size: 15px;
+    margin-top: 17px;
+    margin-right: 1px;
+    padding: 0.5px;
+  
+  }
+
+  /* Home page */
+
+  #Home #upper_page {
+    padding: 40px;
+    height: 500px;
+    background-color: aliceblue;
+  }
+
+  #Home #upper_page img {
+    margin-top: 60px;
+    height: 80%;
+    width: 40%;
+    border-radius: 15px;
+    display: flex; 
+    box-shadow: 0.5px 0.5px 0.5px; 
+
+  }
+
+  #Home #upper_page h2 {
+    font-size: 50px;
+    position: absolute;
+    right: 18%;
+    margin-top: 5px;
+    
+  }
+
+  #Home .home_container #bottom_page h3 {
+    margin-left: 210px;
+
+  }
+
+  #Home .home_container #bottom_page p {
+    font-size: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-bottom: 10px;
+  }
+
+  /* Project section */
+  .container_projects {
+    margin-top: 100px;
+  }
+
+  .each_project {
+    margin-top:100px;
+  }
+
+  .projects {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 95%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px;
+
+  }
+
+  .projects video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+    width: 250px;
+  }
+
+  .projects h3 {
+    margin: 5px;
+  }
+
+  .projects ul {
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    margin-top: 5px;
+  }
+
+  .projects ul li {
+    font-size: 20px;
+  }
+
+  /* Education Section */
+   #education {
+    background-color: white;
+    margin-top: 170px;
+    width: 95%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px;
+    border-style: outset;
+  }
+
+  #education .container {
+    padding: 20px;
+    margin-left: 40px;
+    padding-bottom: 50px;
+    
+  }
+
+  #education #columns h3 {
+    font-size: 24px;
+  }
+
+  #education #columns p {
+    font-size: 20px;
+  }
+
+  /* Contact Information Section */
+
+  #information #container{
+    background-color: white;
+    margin-top: 170px;
+    width: 90%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px;
+  }
+
+  #container {
+    padding: 30px;
+    margin-left: 30px;
+    
+  }
+  
+  #contact #information p {
+    font-size: 19px;
+  }
+  
+  #contact #information p a {
+    font-size: 19px;
+  }
+
+  
+
+  
+}
+
+@media (min-width: 770px) and (max-width: 800px) {
+  .navbar {
+    /* makes the navbar fixed at top of screen */
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    /*nav bar extends to the other side of screen */
+    width: 100%;
+    height: 60px;
+    background: rgba(0,0,0,0.7);
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+  
+  }
+  
+  .navbar ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+  }
+
+  /* Home page */
+  #Home #upper_page {
+    padding-top: 1px;
+    padding-bottom: 100px;
+    background-color: aliceblue;
+    z-index: 1;
+    opacity: 1;
+    height: 95%;
+    border-style: solid;
+    border-color: aliceblue;
+    box-shadow: 5px 5px 8px white;
+  }
+
+  #Home #upper_page img {
+    margin-top: 150px;
+    margin-bottom: 30px;
+    height: 30%;
+    width: 15%;
+    display: flex;
+    box-shadow: 0.5px 0.5px 0.5px; 
+  }
+
+
+  #Home #upper_page h2 {
+    font-size: 40px;
+    position: absolute;
+    right: 24%;
+    margin-top: 5px;
+  }
+
+  #Home .home_container #wrapper p{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  #Home .home_container #bottom_page h3 {
+    margin-left: 70px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+
+  #Home .home_container #bottom_page p {
+    font-size: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+  }
+
+  /* Project section */
+  .container_projects {
+    margin-top: 100px;
+  }
+
+  .each_project {
+    margin-top:100px;
+  }
+
+  .projects {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 70%;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px;
+
+  }
+
+  .projects video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 5px;
+    padding-bottom: 5px;
+  }
+
+  .each_project .project_description {
+    background-color: white;
+  }
+
+  .projects h3 {
+    margin: 5px;
+    margin-left: 30px;
+    
+  }
+  .projects ul {
+    padding: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    margin-top: 5px;
+  }
+
+  .projects ul li {
+    font-size: 20px;
+  }
+
+  /* Education Section */
+   #education {
+    background-color: whitesmoke;
+    margin-top: 170px;
+    width: 70%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px;
+  }
+
+  #education .container {
+    padding: 10px;
+    margin-left: 10px;
+    padding-bottom: 50px;
+    
+  }
+
+  #education #columns h3 {
+    font-size: 24px;
+  }
+
+  #education #columns p {
+    font-size: 20px;
+  }
+
+  /* Contact Information Section */
+
+  #information #container{
+    background-color: whitesmoke;
+    margin-top: 170px;
+    width: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px;
+  }
+
+  #container {
+    padding: 30px;
+    margin-left: 30px;
+    
+  }
+  
+  #contact #information p {
+    font-size: 19px;
+  }
+  
+  #contact #information p a {
+    font-size: 19px;
+  }
+
+}
+
+@media (min-width: 801px) and (max-width: 1024px) {
+  .navbar {
+    /* makes the navbar fixed at top of screen */
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    /*nav bar extends to the other side of screen */
+    width: 100%;
+    height: 60px;
+    background: rgba(0,0,0,0.7);
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+  
+  }
+  
+  .navbar ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+  
+  }
+
+  /* Home page */
+
+  #Home #upper_page {
+    padding-top: 1px;
+    padding-bottom: 100px;
+    background-color: aliceblue;
+    z-index: 1;
+    opacity: 1;
+    height: 95%;
+    box-shadow: 5px 5px 8px white;
+  }
+
+  #Home #upper_page img {
+    margin-top: 150px;
+    margin-bottom: 30px;
+    height: 50%;
+    width: 30%;
+    display: flex;
+    box-shadow: 0.5px 0.5px 0.5px; 
+  }
+
+
+  #Home #upper_page h2 {
+    font-size: 50px;
+    position: absolute;
+    right: 17%;
+    margin-top: 5px;
+  }
+
+  #Home .home_container #wrapper p{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  #Home .home_container #bottom_page h3 {
+    margin-left: 138px;
+  }
+  
+
+  #Home .home_container #bottom_page p {
+    font-size: 20px;
+    
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+  }
+
+  /* Project section */
+  .container_projects {
+    margin-top: 100px;
+  }
+
+  .each_project {
+    margin-top:100px;
+  }
+
+  .projects {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 70%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px;
+    border-style: outset;
+
+  }
+
+  .projects video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 5px;
+  }
+
+  .projects h3 {
+    margin: 5px;
+    margin-left: 30px;
+    
+  }
+  .projects ul {
+    padding: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    margin-top: 5px;
+  }
+
+  .projects ul li {
+    font-size: 20px;
+  }
+
+  /* Education Section */
+   #education {
+    background-color: white;
+    margin-top: 170px;
+    width: 60%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px;
+    border-style: outset;
+  }
+
+  #education .container {
+    padding: 10px;
+    margin-left: 50px;
+    padding-bottom: 50px;
+    
+  }
+
+  #education #columns h3 {
+    font-size: 24px;
+  }
+
+  #education #columns p {
+    font-size: 20px;
+  }
+
+  /* Contact Information Section */
+
+  #information #container{
+    background-color: white;
+    margin-top: 170px;
+    width: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px;
+    border-style: outset;
+  }
+
+  #container {
+    padding: 30px;
+    margin-left: 30px;
+    
+  }
+  
+  #contact #information p {
+    font-size: 19px;
+  }
+  
+  #contact #information p a {
+    font-size: 19px;
+  }
+
+}
+
+@media (min-width: 1024px) and (min-width: 1024px) {
+  .navbar {
+    /* makes the navbar fixed at top of screen */
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    /*nav bar extends to the other side of screen */
+    width: 100%;
+    height: 60px;
+    background: rgba(0,0,0,0.7);
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+  
+  }
+  
+  .navbar ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+  
+  }
+
+  /* Home page */
+
+  #Home #upper_page {
+    padding-top: 1px;
+    padding-bottom: 100px;
+    background-color: aliceblue;
+    z-index: 1;
+    opacity: 1;
+    height: 95%;
+    box-shadow: 5px 5px 8px white;
+  }
+
+  #Home #upper_page img {
+    margin-top: 150px;
+    margin-bottom: 30px;
+    height: 50%;
+    width: 30%;
+    display: flex;
+    box-shadow: 0.5px 0.5px 0.5px; 
+  }
+
+
+  #Home #upper_page h2 {
+    font-size: 50px;
+    position: absolute;
+    right: 26%;
+    margin-top: 5px;
+  }
+
+  #Home .home_container #wrapper p{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  #Home .home_container #bottom_page h3 {
+    margin-left: 138px;
+  }
+  
+
+  #Home .home_container #bottom_page p {
+    font-size: 20px;
+    
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+  }
+
+  /* Project section */
+  .container_projects {
+    margin-top: 100px;
+  }
+
+  .each_project {
+    margin-top:100px;
+  }
+
+  .projects {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 70%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px;
+    border-style: outset;
+
+  }
+
+  .projects video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 5px;
+  }
+
+  .projects h3 {
+    margin: 5px;
+    margin-left: 30px;
+    
+  }
+  .projects ul {
+    padding: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    margin-top: 5px;
+  }
+
+  .projects ul li {
+    font-size: 20px;
+  }
+
+  /* Education Section */
+   #education {
+    background-color: white;
+    margin-top: 170px;
+    width: 60%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px;
+    border-style: outset;
+  }
+
+  #education .container {
+    padding: 10px;
+    margin-left: 50px;
+    padding-bottom: 50px;
+    
+  }
+
+  #education #columns h3 {
+    font-size: 24px;
+  }
+
+  #education #columns p {
+    font-size: 20px;
+  }
+
+  /* Contact Information Section */
+
+  #information #container{
+    background-color: white;
+    margin-top: 170px;
+    width: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px;
+    border-style: outset;
+  }
+
+  #container {
+    padding: 30px;
+    margin-left: 30px;
+    
+  }
+  
+  #contact #information p {
+    font-size: 19px;
+  }
+  
+  #contact #information p a {
+    font-size: 19px;
+  }
+
+}
+
+@media (min-width: 1282px) {
+  .navbar {
+    /* makes the navbar fixed at top of screen */
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    /*nav bar extends to the other side of screen */
+    width: 100%;
+    height: 60px;
+    background: rgba(0,0,0,0.7);
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+  
+  }
+  
+  .navbar ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+  }
+
+  /* Home page */
+  #Home #upper_page {
+    padding-top: 1px;
+    padding-bottom: 100px;
+    background-color: aliceblue;
+    z-index: 1;
+    opacity: 1;
+    height: 95%;
+    border-style: solid;
+    border-color: aliceblue;
+    box-shadow: 5px 5px 8px white;
+  }
+
+  #Home #upper_page img {
+    margin-top: 110px;
+    margin-bottom: 30px;
+    height: 20%;
+    width: 10%;
+    display: flex;
+    box-shadow: 0.5px 0.5px 0.5px; 
+  }
+
+
+  #Home #upper_page h2 {
+    font-size: 50px;
+    position: absolute;
+    right: 34%;
+    margin-top: 5px;
+  }
+
+  #Home .home_container #wrapper p{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  #Home .home_container #bottom_page h3 {
+    margin-left: 437px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+
+  #Home .home_container #bottom_page p {
+    font-size: 20px;
+    
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 10px;
+  }
+
+  /* Project section */
+  .container_projects {
+    margin-top: 100px;
+  }
+
+  .each_project {
+    margin-top:100px;
+  }
+
+  .projects {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 70%;
+    background-color: aliceblue;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px;
+  }
+
+  .projects video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 5px;
+    padding-bottom: 5px;
+  }
+
+  .each_project .project_description {
+    background-color: white;
+  }
+
+  .projects h3 {
+    margin: 5px;
+    margin-left: 30px;
+    
+  }
+  .projects ul {
+    padding: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    margin-top: 5px;
+  }
+
+  .projects ul li {
+    font-size: 20px;
+  }
+
+  /* Education Section */
+   #education {
+    background-color: white;
+    margin-top: 170px;
+    width: 60%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px;
+  }
+
+  #education .container {
+    padding: 10px;
+    margin-left: 130px;
+    padding-bottom: 50px;
+    
+  }
+
+  #education #columns h3 {
+    font-size: 24px;
+  }
+
+  #education #columns p {
+    font-size: 20px;
+  }
+
+  /* Contact Information Section */
+
+  #information #container{
+    background-color: white;
+    margin-top: 170px;
+    width: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px;
+  }
+
+  #container {
+    padding: 30px;
+    margin-left: 30px;
+    
+  }
+  
+  #contact #information p {
+    font-size: 19px;
+  }
+  
+  #contact #information p a {
+    font-size: 19px;
+  }
+
+}
+
+
+
+#Home #upper_page {
+  border-style: solid;
+  border-color: rgb(202, 222, 243);
+}
+
+
+#Home #bottom_page {
+  background-color: white;
+}
+
+#Home #upper_page h2 {
+  
+}
+
+#Home #bottom_page h3 {
+  margin-left: 30px;
+  margin-bottom: 5px;
+  font-size: 25px;
+}
+
+#Home #upper_page img {
+  display: block;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+#Home .home_container #bottom_page p {
+  
+}
+
+.projects .each_project h3 {
+  font-size: 20px;
+  text-align: left;
+  float: left;
+}
+
+.projects video {
+  max-width: 100%;
+}
+
+video {
+  background-color: aliceblue;
+  border-radius: 15px;
+  
+}
+
+.projects .each_project ul {
+  margin-top: 5px;
+  list-style-type: none;
+  text-align: left;
+}
+
+
+.projects ul li {
+  padding: 5px;
+}
+
+.projects {
+  font-size: 20px;
+}
+
+button {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 1px 1px;
+  
+}
+
+.projects a:hover {
+  font-size: 21px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  
+}
+
+
+section p {
+  font-size: 1.5rem;
+}
+
+p {
+  text-align: left;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+li {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+#contact a {
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+
+#contact a:hover {
+  color: slateblue;
+}
